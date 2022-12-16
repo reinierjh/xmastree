@@ -11,7 +11,7 @@ def in_between(now, start, end):
         return start <= now or now < end
 
 tree = RGBXmasTree()
-colors = [Color('pink'), Color('brown'), Color('red'), Color('green'), Color('blue')] # add more if you like
+colors = [Color('red'), Color('green'), Color('blue')] # add more if you like
 tree.brightness = 0.05
 tree_peak = (1, 32, 255)
 
