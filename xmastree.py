@@ -9,6 +9,13 @@ def in_between(now, start, end):
         return start <= now < end
     else:
         return start <= now or now < end
+def on_message(client, userdata, message):
+    global message_received
+    global tree_status
+    time.sleep(1)
+    message_received=str(message.payload.decode("utf-8"))
+    decoded_message
+    
 
 tree = RGBXmasTree()
 colors = [Color('red'), Color('green'), Color('blue')] # add more if you like
